@@ -6,7 +6,15 @@ require("dotenv").config();
 require("./utils/mongo.utils.js")();
 const app = express();
 
-app.use(cors());
+const corsOption = {
+	origin: [
+		"http://localhost:3000",
+		"http://localhost:5000",
+		"https://notes-for-me-omega.vercel.app/",
+	],
+};
+
+app.use(cors(corsOption));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
