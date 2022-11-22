@@ -1,3 +1,3 @@
-const apiHost = "https://notes-for-me-omega.vercel.app/";
+const apiHost = "https://git.heroku.com/pandacover-notes.git";
 
 export default apiHost;
