@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+	.active-tags-btn {
+		@apply bg-indigo-600/70 text-white;
+	}
+
+	.tags-btn {
+		@apply mr-8 w-16 py-1 text-center rounded-[3px];
+	}
+}
+
+html,
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+.content-box {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 8;
+	-webkit-box-orient: vertical;
+}
