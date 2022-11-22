@@ -1,3 +1,3 @@
-const apiHost = "https://git.heroku.com/pandacover-notes.git/";
+const apiHost = "https://pandacover-notes.herokuapp.com/";
 
 export default apiHost;
